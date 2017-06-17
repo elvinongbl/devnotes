@@ -46,24 +46,27 @@ iperf3 client :- 172.169.0.2
 
 Assuming 1st adapter is enp0s3 and 2nd is enp0s8, we configure
 /etc/network/interfaces as:-
+
+Note: use 'sudo ifconfig' to figure out what is device name of the
+network adapters.
+
 ```
 auto enp0s8
 iface enp0s8 inet static
     address 172.169.0.1
     netmask 255.255.255.0
-    gateway 172.169.0.2
 
 auto enp0s3
 iface enp0s3 inet dhcp
-    netmask 255.255.255.0
-    gateway 192.168.1.1
-    dns-nameservers 192.168.1.1 8.8.8.8
-    dns-domain acme.com
-    dns-search acme.com
 ```
+Note: for statically assigned IP address, please don't set gateway to
+the IP address of your DUT because this will cause confusion in Linux
+IP route table.
 
 Fire up both network adapters at server end:
 ```
+sudo ifdown enp0s3
+sudo ifdown enp0s8
 sudo ifup enp0s3
 sudo ifup enp0s8
 ```
@@ -74,6 +77,8 @@ a server on Internet:
 route
 ping www.google.com
 ```
+Notes: the settings in /etc/network/interfaces are stateful and there
+is no need for restarting of network adapters on future system start-up.
 
 ## 2) Client (DUT)
 
@@ -84,13 +89,15 @@ auto eth0
 iface eth0 inet static
     address 172.169.0.2
     netmask 255.255.255.0
-    gateway 172.169.0.1
 ```
 
 Start network adapter at client end (DUT):
 ```
+sudo ifdown eth0
 sudo ifup eth0
 ```
+Notes: the settings in /etc/network/interfaces are stateful and there
+is no need for restarting of network adapters on future system start-up.
 
 # B) Testing
 
