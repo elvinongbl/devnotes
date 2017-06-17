@@ -6,6 +6,17 @@ iperf3 measures throughput between server and client. To ensure that measurement
 is not poor due to computing bottle-neck in server, it is advisable that server
 is running on machine of higher computing power.
 
+To install iperf3 on Ubuntu machine
+```
+sudo apt-get install iperf3
+```
+
+For Yocto Project-built Linux OS, to pre-install iperf3 on target OS, please
+make sure:-
+
+ - conf/bblayers.conf : include path to meta-openembedded/meta-oe
+ - conf/local.conf    : IMAGE_INSTALL += "iperf3"
+
 ### 1.1(a) Linux VM with dual network adapters
 
 You may also setup such that a Linux VM is serving as server. In my current
