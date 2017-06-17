@@ -89,4 +89,5 @@ GitHub account names there.
 
 ## iperf3
 
-
+For more details about using iperf3 for collecting network throughput and latency,
+please see [docs/iper3](docs/iperf3.md).
