@@ -47,7 +47,7 @@ echo ${SSH_AGENT_PID}
 ```
 
 Further read: github.com provides good SSH setup documentation.
-Start with https://help.github.com/articles/connecting-to-github-with-ssh/
+Start with [GitHub SSH Setup](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
 ## GitHub
 
@@ -56,7 +56,7 @@ make sure that you choose "Clone with SSH" instead of "Clone with HTTPS". This
 prevents you from entering username and password everytime you need to push
 commits back to GitHub repositories.
 
-<img src="docs/images/clone-with-ssh.png"/>
+<img src="docs/images/clone-with-ssh.png" width="400" height="200" />
 
 The URL for the git clone should look like below:
 ```
