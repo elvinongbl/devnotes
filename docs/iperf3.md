@@ -1,4 +1,4 @@
-# Setup
+# A) Setup
 
 ## 1) Server
 
@@ -76,6 +76,7 @@ ping www.google.com
 ```
 
 ## 2) Client (DUT)
+
 Assuming Ethernet network adapter for device under test (DUT) is eth0,
 /etc/network/interfaces shall be configured as:-
 ```
@@ -91,3 +92,60 @@ Start network adapter at client end (DUT):
 sudo ifup eth0
 ```
 
+# B) Testing
+
+## iperf3 client is sending
+
+Server-side:
+```
+iperf3 -s
+```
+
+Client-side:
+```
+iperf3 -c <server IP address>
+```
+
+Screen-shots:-
+
+Client-side:
+
+<img src="images/iperf3/iperf3-client-1.png" width="600" height="300" />
+
+Server-side:
+
+<img src="images/iperf3/iperf3-server-1.png" width="600" height="300" />
+
+## iperf3 server is sending
+
+Server-side:
+```
+iperf3 -s
+```
+
+Client-side:
+```
+iperf3 -c <server IP address> -R
+```
+
+Screen-shots:-
+
+Client-side:
+
+<img src="images/iperf3/iperf3-client-2.png" width="600" height="300" />
+
+Server-side:
+
+<img src="images/iperf3/iperf3-server-2.png" width="600" height="300" />
+
+## iperf3 server and client are sending to each other
+
+Server-side:
+```
+iperf3 -s
+```
+
+Client-side:
+```
+iperf3 -c <server IP address> -d
+```
