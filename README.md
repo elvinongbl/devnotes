@@ -49,6 +49,29 @@ echo ${SSH_AGENT_PID}
 Further read: github.com provides good SSH setup documentation.
 Start with https://help.github.com/articles/connecting-to-github-with-ssh/
 
+## GitHub
+
+1) After you have setup your SSH public key with your GitHub account, please
+make sure that you choose "Clone with SSH" instead of "Clone with HTTPS". This
+prevents you from entering username and password everytime you need to push
+commits back to GitHub repositories.
+
+The URL for the git clone should look like below:
+```
+git@github.com:<user-name>/<project-name>.git
+```
+
+If you are not sure, how to check the URL that you have used before in other
+repositories, you can use below command to check out:-
+
+```
+git remote -v
+```
+
+2) To allow other contributors to be able to push to GitHub repositories,
+in respective project "settings" page and choose collaborators tab for add their
+GitHub account names there.
+
 ## Performance Gathering
 
 ### iperf3
