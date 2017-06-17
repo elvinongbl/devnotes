@@ -56,6 +56,8 @@ make sure that you choose "Clone with SSH" instead of "Clone with HTTPS". This
 prevents you from entering username and password everytime you need to push
 commits back to GitHub repositories.
 
+<img src="docs/images/clone-with-ssh.png"/>
+
 The URL for the git clone should look like below:
 ```
 git@github.com:<user-name>/<project-name>.git
