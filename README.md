@@ -2,9 +2,20 @@
 This is my quick personal notes that I have gathered all these years when
 I am dealing with Linux-based OS and system.
 
+# Table of Content
+
+[Networking](#networking)
+  - [Setting-up SSH Access](#setting-up-ssh-access)
+
+[GitHub Setup](#github-setup)
+
+[Performance Gathering](#performance-gathering)
+  - [iperf3](#iperf3)
+
+
 # Networking
 
-## Setting-up SSH access
+## Setting-up SSH Access
 
 1) Install openssh-client & ssh-agent-filter
 ```
@@ -49,7 +60,7 @@ echo ${SSH_AGENT_PID}
 Further read: github.com provides good SSH setup documentation.
 Start with [GitHub SSH Setup](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
-## GitHub
+# GitHub Setup
 
 1) After you have setup your SSH public key with your GitHub account, please
 make sure that you choose "Clone with SSH" instead of "Clone with HTTPS". This
@@ -74,8 +85,8 @@ git remote -v
 in respective project "settings" page and choose collaborators tab for add their
 GitHub account names there.
 
-## Performance Gathering
+# Performance Gathering
 
-### iperf3
+## iperf3
 
 
