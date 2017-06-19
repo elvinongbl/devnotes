@@ -101,7 +101,7 @@ is no need for restarting of network adapters on future system start-up.
 
 # B) Testing
 
-## iperf3 client is sending
+## 1) iperf3 client is sending
 
 Server-side:
 ```
@@ -123,7 +123,7 @@ Server-side:
 
 <img src="images/iperf3/iperf3-server-1.png" width="600" height="300" />
 
-## iperf3 server is sending
+## 2) iperf3 server is sending
 
 Server-side:
 ```
@@ -145,7 +145,7 @@ Server-side:
 
 <img src="images/iperf3/iperf3-server-2.png" width="600" height="300" />
 
-## iperf3 server and client are sending to each other
+## 3) iperf3 server and client are sending to each other
 
 Server-side:
 ```
@@ -156,3 +156,36 @@ Client-side:
 ```
 iperf3 -c <server IP address> -d
 ```
+
+## 4) Setting to use UDP instead of TCP (default)
+Server-side:
+```
+iperf3 -s
+```
+
+Client-side:
+```
+iperf3 -c <server IP address> -u
+```
+
+Note: Using UDP instead of TCP is a great way to measure network latency
+and stability of network. This is because TCP provides ack & retry which
+UDP does not have.
+
+<img src="images/iperf3/iperf3-udp-no-bw.png" width="600" height="300" />
+
+By default, UDP traffic is throttled at lower bandwidth. Observe that the
+jitter is also high.
+
+To increase the bandwidth allocated for UDP, we can use option '-b'
+as shown below:
+
+Client-side:
+```
+iperf3 -c <server IP address> -u -b n<K|M>
+```
+
+<img src="images/iperf3/iperf3-udp-bw-set.png" width="600" height="300" />
+
+Observe that when the bandwidth allocated to UDP increases network jitter
+reduces.
