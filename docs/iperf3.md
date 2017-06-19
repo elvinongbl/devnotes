@@ -158,6 +158,7 @@ iperf3 -c <server IP address> -d
 ```
 
 ## 4) Setting to use UDP instead of TCP (default)
+
 Server-side:
 ```
 iperf3 -s
@@ -189,3 +190,32 @@ iperf3 -c <server IP address> -u -b n<K|M>
 
 Observe that when the bandwidth allocated to UDP increases network jitter
 reduces.
+
+##) Changing TCP window size
+
+Server-side:
+```
+iperf3 -s
+```
+
+Client-side:
+```
+iperf3 -c <server IP address> -w n<K|M>
+```
+
+Changing TCP window size influences network throughput:
+As TCP window size increases, network throughput increases.
+
+<img src="images/iperf3/iperf3-tcpwin-small.png" width="600" height="300" />
+
+<img src="images/iperf3/iperf3-tcpwin-mid.png" width="600" height="300" />
+
+<img src="images/iperf3/iperf3-tcpwin-large.png" width="600" height="300" />
+
+On Linux system, we can use the following commands to inspect TCP write and
+read window size:-
+
+```
+sysctl -a | grep tcp_wmem
+sysctl -a | grep tcp_rmem
+```
