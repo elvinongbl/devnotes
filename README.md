@@ -12,6 +12,8 @@ I am dealing with Linux-based OS and system.
 [Performance Gathering](#performance-gathering)
   - [iperf3](#iperf3)
 
+[Yocto Project](#yocto-project)
+  - [package management](#package-management)
 
 # Networking
 
@@ -91,3 +93,10 @@ GitHub account names there.
 
 For more details about using iperf3 for collecting network throughput and latency,
 please see [docs/iper3](docs/iperf3.md).
+
+# Yocto Project
+
+## Package Management
+
+For more details about how to add package manager, setup package feed and install new
+software packages from target machine, please see [docs/yp-dnf](docs/yp-dnf.md)
