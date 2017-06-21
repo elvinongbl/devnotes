@@ -213,9 +213,22 @@ As TCP window size increases, network throughput increases.
 <img src="images/iperf3/iperf3-tcpwin-large.png" width="600" height="300" />
 
 On Linux system, we can use the following commands to inspect TCP write and
-read window size:-
+read window size range and current value:-
 
 ```
-sysctl -a | grep tcp_wmem
-sysctl -a | grep tcp_rmem
+# To read the range of write and read TCP window size
+sysctl -a | grep net.ipv4.tcp_wmem
+sysctl -a | grep net.ipv4.tcp_rmem
+# To read current TCP window size for write and read
+sysctl -a | grep net.core.wmem_max
+sysctl -a | grep net.core.rmem_max
 ```
+To change the default TCP window size in Linux system, we can use the following
+commands:-
+
+```
+# The range of TCP window size is upto 65,535 Byte.
+sysctl -w net.core.wmem_max=65535
+sysctl -w net.core.rmem_max=65535
+```
+
