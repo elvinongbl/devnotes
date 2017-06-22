@@ -21,3 +21,17 @@ wireshark &
 ```
 
 <img src="images/wireshark/wireshark-start-up.png" width="500" height="500" />
+
+# Add a new column to show time delta
+
+1) Right click on column and choose column preferences:-
+<img src="images/wireshark/wireshark-column-preferences.png" width="400" height="300" />
+
+2) Add a new column by clicking on '+' button:-
+<img src="images/wireshark/wireshark-add-column.png" width="500" height="500" />
+
+3) Change the column 'name' and choose 'time-delta' for 'type', then click 'OK':-
+<img src="images/wireshark/wireshark-column-type.png" width="500" height="450" />
+
+4) You may also press and hold newly created column to the position you desired:-
+<img src="images/wireshark/wireshark-time-delta.png" width="500" height="400" />
