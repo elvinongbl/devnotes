@@ -15,6 +15,7 @@ I am dealing with Linux-based OS and system.
   - [For I/O Access](#for-i/o-acess)
   - [For Networking](#for-networking)
     * [iperf3](#iperf3)
+    * [wireshark](#wireshark)
   - [For Graphics & Media](#for-graphics--media)
   - [For Kernel Boot & System Start-up](#for-kernel-boot--system-start-up)
 
@@ -106,6 +107,11 @@ GitHub account names there.
 
 For more details about using iperf3 for collecting network throughput and latency,
 please see [docs/iper3](docs/iperf3.md).
+
+### wireshark
+
+This section contains information about wireshark setup and its usage, please see
+[docs/wireshark](docs/wireshark.md)
 
 ## For Graphics & Media
 
