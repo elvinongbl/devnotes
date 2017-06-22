@@ -6,13 +6,20 @@ I am dealing with Linux-based OS and system.
 
 [Networking](#networking)
   - [Setting-up SSH Access](#setting-up-ssh-access)
+  - [Using ethtool](#using-ethtool)
 
 [GitHub Setup](#github-setup)
 
 [Performance Gathering](#performance-gathering)
-  - [iperf3](#iperf3)
+  - [For Processor](#for-processor)
+  - [For I/O Access](#for-i/o-acess)
+  - [For Networking](#for-networking)
+    * [iperf3](#iperf3)
+  - [For Graphics & Media](#for-graphics--media)
+  - [For Kernel Boot & System Start-up](#for-kernel-boot--system-start-up)
 
 [Yocto Project](#yocto-project)
+  - [Recipe and Meta Layer](#recipe-and-meta-layer)
   - [package management](#package-management)
 
 # Networking
@@ -62,6 +69,8 @@ echo ${SSH_AGENT_PID}
 Further read: github.com provides good SSH setup documentation.
 Start with [GitHub SSH Setup](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
+## Using ethtool
+
 # GitHub Setup
 
 1) After you have setup your SSH public key with your GitHub account, please
@@ -88,13 +97,23 @@ in respective project "settings" page and choose collaborators tab for add their
 GitHub account names there.
 
 # Performance Gathering
+## For Processor
 
-## iperf3
+## For I/O Access
+
+## For Networking
+### iperf3
 
 For more details about using iperf3 for collecting network throughput and latency,
 please see [docs/iper3](docs/iperf3.md).
 
+## For Graphics & Media
+
+## For Kernel Boot & System Start-up
+
 # Yocto Project
+
+## Recipe and Meta Layer
 
 ## Package Management
 
