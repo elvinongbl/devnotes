@@ -77,6 +77,9 @@ Please see examples at [docs/iper3](docs/iperf3.md#11b-setting-ip-address-for-th
 
 ## Using ethtool
 
+For more details about using ethtool for getting and setting configuration for network device,
+please see [docs/ethtool](docs/ethtool.md).
+
 # GitHub Setup
 
 1) After you have setup your SSH public key with your GitHub account, please

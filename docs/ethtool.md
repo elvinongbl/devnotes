@@ -28,5 +28,5 @@ ifconfig
 ethtool <devname>
 ```
 
-<img src="images/ethtool/ethtool-eth0.png" width="600" height="400" />
+<img src="images/ethtool/ethtool-eth0.png" width="680" height="414" />
 
