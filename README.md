@@ -6,6 +6,7 @@ I am dealing with Linux-based OS and system.
 
 [Networking](#networking)
   - [Setting-up SSH Access](#setting-up-ssh-access)
+  - [Setting-up /etc/network/interfaces](#setting-up-etcnetworkinterfaces)
   - [Using ethtool](#using-ethtool)
 
 [GitHub Setup](#github-setup)
@@ -69,6 +70,10 @@ echo ${SSH_AGENT_PID}
 
 Further read: github.com provides good SSH setup documentation.
 Start with [GitHub SSH Setup](https://help.github.com/articles/connecting-to-github-with-ssh/)
+
+## Setting-up /etc/network/interfaces
+
+Please see examples at [docs/iper3](docs/iperf3.md#11b-setting-ip-address-for-the-2-adapters-at-linux-vm).
 
 ## Using ethtool
 
