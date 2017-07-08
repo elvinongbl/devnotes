@@ -30,3 +30,17 @@ ethtool <devname>
 
 <img src="images/ethtool/ethtool-eth0.png" width="680" height="414" />
 
+# 3) Pause Frame
+
+IEEE 802.3x defines a mechanism for temporarily stopping the transmission of
+Ethernet data. To display flow control state of Ethernet port and setting them
+independently, we use:-
+
+```
+# To show
+ethtool -a <devname>
+# To change flow control of device
+ethtool -A <devname> [autoneg on|off] [rx on|off] [tx on|off]
+```
+
+<img src="images/ethtool/ethtool-get-set-pause.png" width="705" height="211" />
