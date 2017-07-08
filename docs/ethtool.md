@@ -44,3 +44,14 @@ ethtool -A <devname> [autoneg on|off] [rx on|off] [tx on|off]
 ```
 
 <img src="images/ethtool/ethtool-get-set-pause.png" width="705" height="211" />
+
+# 4) Interrupt Coalesce
+
+Interrupt coalesce is meant to regulate interrupt firing due to Tx & Rx packets.
+
+```
+# To show coalesce state of an Ethernet device
+ethtool -c <devname>
+```
+
+<img src="images/ethtool/ethtool-show-coalesce.png" width="270" height="428" />
