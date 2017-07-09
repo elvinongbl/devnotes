@@ -1,7 +1,9 @@
 # A) Overview
 
   - [Installation](#installation)
-  - [Show Basics Network Device Information](#show-basics-network-device-information)
+  - [Show Basics Network Device Information](#2-show-basics-network-device-information)
+  - [Pause Frame](#3-pause-frame)
+  - [Interrupt Coalesce](#4-interrupt-coalesce)
 
 # 1) Installation
 
