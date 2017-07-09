@@ -55,3 +55,17 @@ ethtool -c <devname>
 ```
 
 <img src="images/ethtool/ethtool-show-coalesce.png" width="270" height="428" />
+
+```
+# To modify coalesce controls
+ethtool -C <devname> \
+[adaptive-rx on|off] [adaptive-tx on|off] \
+[rx-usecs N] [rx-frames N] [rx-usecs-irq N] [rx-frames-irq N] \
+[tx-usecs N] [tx-frames N] [tx-usecs-irq N] [tx-frames-irq N] \
+[stats-block-usecs N] \
+[pkt-rate-low N]  [rx-usecs-low N]  [rx-frames-low N]  \
+                  [tx-usecs-low N]  [tx-frames-low N]  \
+[pkt-rate-high N] [rx-usecs-high N] [rx-frames-high N] \
+                  [tx-usecs-high N] [tx-frames-high N] \
+[sample-interval N]
+```
