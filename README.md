@@ -17,6 +17,7 @@ I am dealing with Linux-based OS and system.
   - [For Networking](#for-networking)
     * [iperf3](#iperf3)
     * [wireshark](#wireshark)
+    * [Lua scripting with tshark](#lua-scripting-with-tshark)
   - [For Graphics & Media](#for-graphics--media)
   - [For Kernel Boot & System Start-up](#for-kernel-boot--system-start-up)
 
@@ -120,6 +121,11 @@ please see [docs/iper3](docs/iperf3.md).
 
 This section contains information about wireshark setup and its usage, please see
 [docs/wireshark](docs/wireshark.md)
+
+### Lua Scripting with tshark
+
+For more information how Lua script can be used as dissectors for Wireshark network
+packet analyzer console (tshark), please see [docs/tshark-lua](docs/tshark-lua.md)
 
 ## For Graphics & Media
 
