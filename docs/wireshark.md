@@ -3,7 +3,8 @@ Table of Contents
 - [Setup](#setup)
 - [Start-up wireshark](#start-up-wireshark)
 - [Add New Time Delta Column](#add-new-time-delta-column)
-- [Using Lua with tshark](#using-lua-with-tshark)
+- [tshark (Console Version of Wireshark)](#tshark-console-version-of-wireshark)
+  * [tshark and Lua Scripting](#tshark-and-lua-scripting)
 
 # Setup
 
@@ -43,15 +44,26 @@ wireshark &
 4) You may also press and drag newly created column to the position you desired:-
 <img src="images/wireshark/wireshark-time-delta.png" width="500" height="400" />
 
-# Using Lua with tshark
+# tshark (Console Version of Wireshark)
 
-tshark is the console version of Wireshark. We can write lua script and registers
-functions with tshark for (1) dissectors, (2) post-dissectors & (3) taps.
+tshark is the console version of Wireshark, a network protocol analyzer.
+It captures network packets in pcap format, the same format used in tcpdump.
 
 To install tshark on Ubuntu machine, type:-
 ```
 sudo apt-get install tshark
 ```
+
+Some examples of tshark common usages:-
+
+To capture a limited number of network packets
+```
+tshark -c [number of packets]
+```
+
+## tshark and Lua scripting
+We can write lua script and registers
+functions with tshark for (1) dissectors, (2) post-dissectors & (3) taps.
 
 To ask tshark to execute Lua script, we use:-
 ```
