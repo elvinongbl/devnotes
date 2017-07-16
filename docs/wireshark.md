@@ -74,6 +74,8 @@ tshark -i <name of interface listed above>
 ```
 <img src="images/wireshark/tshark-list-interfaces.png" width="506" height="205"/>
 
+  We may also specify multiple interfaces as shown below:
+<img src="images/wireshark/tshark-set-2-interfaces.png" width="819" height="57"/>
 
 ## tshark and Lua scripting
 We can write lua script and registers
