@@ -67,6 +67,14 @@ tshark -a duration:X
 ```
 <img src="images/wireshark/tshark-set-duration.png" width="816" height="120"/>
 
+- To list network interfaces and use one for packet capturing
+```
+tshark -D
+tshark -i <name of interface listed above>
+```
+<img src="images/wireshark/tshark-list-interfaces.png" width="506" height="205"/>
+
+
 ## tshark and Lua scripting
 We can write lua script and registers
 functions with tshark for (1) dissectors, (2) post-dissectors & (3) taps.
