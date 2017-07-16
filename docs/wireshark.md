@@ -74,8 +74,28 @@ tshark -i <name of interface listed above>
 ```
 <img src="images/wireshark/tshark-list-interfaces.png" width="506" height="205"/>
 
-  We may also specify multiple interfaces as shown below:
+We may also specify multiple interfaces as shown below:
 <img src="images/wireshark/tshark-set-2-interfaces.png" width="819" height="57"/>
+
+Note: If there is no network interface selected, tshark selects the 1st non-loopback
+interfaces.
+
+- To put an interface as monitor mode
+
+Note: the following steps do not work for network interface on virtualization.
+
+When an interface enters monitor mode, it disassociates itself from the network
+and enter into monitoring network packets. It enters stealth mode where no more
+external network access is possible.
+
+If we want all interfaces to be in monitor mode, place -I ahead of -i.
+```
+tshark -I -i <I/F-1> -i <I/F-2>
+```
+If we want to specify only one interface to enter monitor mode:
+```
+tshark -i <I/F-1> -I -i <I/F-2>
+```
 
 ## tshark and Lua scripting
 We can write lua script and registers
