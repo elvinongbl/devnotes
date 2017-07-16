@@ -56,18 +56,18 @@ sudo apt-get install tshark
 
 Some examples of tshark common usages:-
 
-- To capture a limited number of network packets
+- **To capture a limited number of network packets**
 ```
 tshark -c [number of packets]
 ```
 
-- To limit captures according to duration (in seconds)
+- **To limit captures according to duration (in seconds)**
 ```
 tshark -a duration:X
 ```
 <img src="images/wireshark/tshark-set-duration.png" width="816" height="120"/>
 
-- To list network interfaces and use one for packet capturing
+- **To list network interfaces and use one for packet capturing**
 ```
 tshark -D
 tshark -i <name of interface listed above>
@@ -80,7 +80,7 @@ We may also specify multiple interfaces as shown below:
 Note: If there is no network interface selected, tshark selects the 1st non-loopback
 interfaces.
 
-- To put an interface as monitor mode
+- **To put an interface as monitor mode**
 
 Note: the following steps do not work for network interface on virtualization.
 
