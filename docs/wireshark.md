@@ -56,10 +56,16 @@ sudo apt-get install tshark
 
 Some examples of tshark common usages:-
 
-To capture a limited number of network packets
+- To capture a limited number of network packets
 ```
 tshark -c [number of packets]
 ```
+
+- To limit captures according to duration (in seconds)
+```
+tshark -a duration:X
+```
+<img src="images/wireshark/tshark-set-duration.png" width="816" height="120"/>
 
 ## tshark and Lua scripting
 We can write lua script and registers
