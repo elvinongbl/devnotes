@@ -98,15 +98,5 @@ tshark -i <I/F-1> -I -i <I/F-2>
 ```
 
 ## tshark and Lua scripting
-We can write lua script and registers
-functions with tshark for (1) dissectors, (2) post-dissectors & (3) taps.
-
-To ask tshark to execute Lua script, we use:-
-```
-tshark -X lua_script:<xyz.lua>
-```
-
-For example, running a hello world Lua script:-
-<img src="images/wireshark/tshark-lua-hello.png" width="575" height="207"/>
 
 For more notes on Lua scripting for Wireshark, please see [docs/tshark-lua](tshark-lua.md)
