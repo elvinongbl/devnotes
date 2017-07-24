@@ -85,11 +85,20 @@ interfaces.
 By default, tshark stores captures in pcap format which is the same format
 used in tcpdump.
 
-To list supported file format.
+ * To list supported file format
+
 ```
 tshark -F
 ```
 <img src="images/wireshark/tshark-file-type.png" width="465" height="587"/>
+
+ * To write capture to a file using 'pcapng' format with comment.
+
+Note: capture comment only available in pcapng.
+```
+tshark -F pcapng -w <file.pcapng> --capture-comment "Your comment here"
+wireshark <file>
+```
 
 - **To put an interface as monitor mode**
 
