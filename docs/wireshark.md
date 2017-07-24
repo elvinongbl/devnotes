@@ -80,6 +80,17 @@ We may also specify multiple interfaces as shown below:
 Note: If there is no network interface selected, tshark selects the 1st non-loopback
 interfaces.
 
+- **To list supported file format for capture**
+
+By default, tshark stores captures in pcap format which is the same format
+used in tcpdump.
+
+To list supported file format.
+```
+tshark -F
+```
+<img src="images/wireshark/tshark-file-type.png" width="465" height="587"/>
+
 - **To put an interface as monitor mode**
 
 Note: the following steps do not work for network interface on virtualization.
