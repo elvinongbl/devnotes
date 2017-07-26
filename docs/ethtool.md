@@ -4,6 +4,7 @@
   - [Show Basics Network Device Information](#2-show-basics-network-device-information)
   - [Pause Frame](#3-pause-frame)
   - [Interrupt Coalesce](#4-interrupt-coalesce)
+  - [Dump registers](#5-dump-registers)
 
 # 1) Installation
 
@@ -71,3 +72,46 @@ ethtool -C <devname> \
                   [tx-usecs-high N] [tx-frames-high N] \
 [sample-interval N]
 ```
+
+# 5) Dump Registers
+
+ethtool may dump registers to standard out in various formats:
+  a) Decoded (default): decoding dependent on driver implementation
+  b) Raw (raw on): may be edited and read-back for decoding
+  c) Heximal (hex on): not available for read-back for decoding, so no point post-editing.
+
+ - **Decoded format**
+
+```
+ethtool -d <devname>
+```
+
+<img src="images/ethtool/ethtool-d-part1.png" width="353" height="456" />
+<img src="images/ethtool/ethtool-d-part2.png" width="351" height="456" />
+
+ - **Editing & Read-back Raw format**
+
+```
+ethtool -d <devname> raw on > dump-raw.txt
+hexedit dump-raw.txt
+ethtool -d <devname> hex on file dump-raw.txt
+ethtool -d <devname> file dump-raw.txt
+```
+Note: If you have not installed hexedit, perform the following command in Ubuntu.
+```
+sudo apt-get install hexedit
+```
+
+ - **Hex format**
+
+```
+ethtool -d <devname> hex on > dump-hex.txt
+vi dump-hex.txt
+ethtool -d <devname> hex on file dump-hex.txt
+```
+Note: You will realize that editing hex format content is not working
+correctly as the read-back mode implemented in ethtool project expects
+a raw format output as shown below:-
+
+<img src="images/ethtool/ethtool-dumpregs-src.png" width="669" height="426" />
+
