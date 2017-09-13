@@ -17,7 +17,7 @@ tshark -X lua_script:<xyz.lua>
 
 For example, running a hello world Lua script:-
 
-<img src="images/wireshark/tshark-lua-hello.png" width="575" height="207"/>
+<img src="../images/wireshark/tshark-lua-hello.png" width="575" height="207"/>
 
 # Global Configuration
 The global configuration of Wireshark Lua engine is located at
@@ -35,4 +35,4 @@ There are two variables worth mentioning here:-
 Next, ~/.config/wireshark/init.lua script is executed before eventually running
 the script passed with -X lua_script:xyz.lua as shown below:
 
-<img src="images/wireshark/tshark-lua-initlua.png" width="760" height="225" />
+<img src="../images/wireshark/tshark-lua-initlua.png" width="760" height="225" />

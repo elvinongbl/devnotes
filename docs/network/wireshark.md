@@ -28,21 +28,21 @@ To start wireshark, simply type below:-
 wireshark &
 ```
 
-<img src="images/wireshark/wireshark-start-up.png" width="500" height="500" />
+<img src="../images/wireshark/wireshark-start-up.png" width="500" height="500" />
 
 # Add New Time Delta Column
 
 1) Right click on column and choose column preferences:-
-<img src="images/wireshark/wireshark-column-preferences.png" width="400" height="300" />
+<img src="../images/wireshark/wireshark-column-preferences.png" width="400" height="300" />
 
 2) Add a new column by clicking on '+' button:-
-<img src="images/wireshark/wireshark-add-column.png" width="500" height="500" />
+<img src="../images/wireshark/wireshark-add-column.png" width="500" height="500" />
 
 3) Change the column 'name' and choose 'time-delta' for 'type', then click 'OK':-
-<img src="images/wireshark/wireshark-column-type.png" width="500" height="450" />
+<img src="../images/wireshark/wireshark-column-type.png" width="500" height="450" />
 
 4) You may also press and drag newly created column to the position you desired:-
-<img src="images/wireshark/wireshark-time-delta.png" width="500" height="400" />
+<img src="../images/wireshark/wireshark-time-delta.png" width="500" height="400" />
 
 # tshark (Console Version of Wireshark)
 
@@ -65,17 +65,17 @@ tshark -c [number of packets]
 ```
 tshark -a duration:X
 ```
-<img src="images/wireshark/tshark-set-duration.png" width="816" height="120"/>
+<img src="../images/wireshark/tshark-set-duration.png" width="816" height="120"/>
 
 - **To list network interfaces and use one for packet capturing**
 ```
 tshark -D
 tshark -i <name of interface listed above>
 ```
-<img src="images/wireshark/tshark-list-interfaces.png" width="506" height="205"/>
+<img src="../images/wireshark/tshark-list-interfaces.png" width="506" height="205"/>
 
 We may also specify multiple interfaces as shown below:
-<img src="images/wireshark/tshark-set-2-interfaces.png" width="819" height="57"/>
+<img src="../images/wireshark/tshark-set-2-interfaces.png" width="819" height="57"/>
 
 Note: If there is no network interface selected, tshark selects the 1st non-loopback
 interfaces.
@@ -90,7 +90,7 @@ used in tcpdump.
 ```
 tshark -F
 ```
-<img src="images/wireshark/tshark-file-type.png" width="465" height="587"/>
+<img src="../images/wireshark/tshark-file-type.png" width="465" height="587"/>
 
  * To write capture to a file using 'pcapng' format with comment.
 

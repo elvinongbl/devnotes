@@ -24,13 +24,13 @@ setup, I allocate two network interfaces to my Linux VM as shown below:
 
 1) 1st adapter is attached to bridged adapter of the Wi-Fi port.
 
-<img src="images/iperf3/1st-adapter.png" width="400" height="200" />
+<img src="../images/iperf3/1st-adapter.png" width="400" height="200" />
 
 This adapter shall be used for general access to Internet.
 
 2) 2nd adapter is attached to bridged adapter of the Ethernet port.
 
-<img src="images/iperf3/2nd-adapter.png" width="400" height="200" />
+<img src="../images/iperf3/2nd-adapter.png" width="400" height="200" />
 
 This adapter shall be used to connect to DUT for iperf measurement.
 
@@ -117,11 +117,11 @@ Screen-shots:-
 
 Client-side:
 
-<img src="images/iperf3/iperf3-client-1.png" width="600" height="300" />
+<img src="../images/iperf3/iperf3-client-1.png" width="600" height="300" />
 
 Server-side:
 
-<img src="images/iperf3/iperf3-server-1.png" width="600" height="300" />
+<img src="../images/iperf3/iperf3-server-1.png" width="600" height="300" />
 
 ## 2) iperf3 server is sending
 
@@ -139,11 +139,11 @@ Screen-shots:-
 
 Client-side:
 
-<img src="images/iperf3/iperf3-client-2.png" width="600" height="300" />
+<img src="../images/iperf3/iperf3-client-2.png" width="600" height="300" />
 
 Server-side:
 
-<img src="images/iperf3/iperf3-server-2.png" width="600" height="300" />
+<img src="../images/iperf3/iperf3-server-2.png" width="600" height="300" />
 
 ## 3) iperf3 server and client are sending to each other
 
@@ -173,7 +173,7 @@ Note: Using UDP instead of TCP is a great way to measure network latency
 and stability of network. This is because TCP provides ack & retry which
 UDP does not have.
 
-<img src="images/iperf3/iperf3-udp-no-bw.png" width="600" height="300" />
+<img src="../images/iperf3/iperf3-udp-no-bw.png" width="600" height="300" />
 
 By default, UDP traffic is throttled at lower bandwidth. Observe that the
 jitter is also high.
@@ -186,7 +186,7 @@ Client-side:
 iperf3 -c <server IP address> -u -b n<K|M>
 ```
 
-<img src="images/iperf3/iperf3-udp-bw-set.png" width="600" height="300" />
+<img src="../images/iperf3/iperf3-udp-bw-set.png" width="600" height="300" />
 
 Observe that when the bandwidth allocated to UDP increases network jitter
 reduces.
@@ -206,11 +206,11 @@ iperf3 -c <server IP address> -w n<K|M>
 Changing TCP window size influences network throughput:
 As TCP window size increases, network throughput increases.
 
-<img src="images/iperf3/iperf3-tcpwin-small.png" width="600" height="300" />
+<img src="../images/iperf3/iperf3-tcpwin-small.png" width="600" height="300" />
 
-<img src="images/iperf3/iperf3-tcpwin-mid.png" width="600" height="300" />
+<img src="../images/iperf3/iperf3-tcpwin-mid.png" width="600" height="300" />
 
-<img src="images/iperf3/iperf3-tcpwin-large.png" width="600" height="300" />
+<img src="../images/iperf3/iperf3-tcpwin-large.png" width="600" height="300" />
 
 On Linux system, we can use the following commands to inspect TCP write and
 read window size range and current value:-

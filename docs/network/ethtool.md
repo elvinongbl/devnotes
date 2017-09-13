@@ -31,7 +31,7 @@ ifconfig
 ethtool <devname>
 ```
 
-<img src="images/ethtool/ethtool-eth0.png" width="680" height="414" />
+<img src="../images/ethtool/ethtool-eth0.png" width="680" height="414" />
 
 # 3) Pause Frame
 
@@ -46,7 +46,7 @@ ethtool -a <devname>
 ethtool -A <devname> [autoneg on|off] [rx on|off] [tx on|off]
 ```
 
-<img src="images/ethtool/ethtool-get-set-pause.png" width="705" height="211" />
+<img src="../images/ethtool/ethtool-get-set-pause.png" width="705" height="211" />
 
 # 4) Interrupt Coalesce
 
@@ -57,7 +57,7 @@ Interrupt coalesce is meant to regulate interrupt firing due to Tx & Rx packets.
 ethtool -c <devname>
 ```
 
-<img src="images/ethtool/ethtool-show-coalesce.png" width="270" height="428" />
+<img src="../images/ethtool/ethtool-show-coalesce.png" width="270" height="428" />
 
 ```
 # To modify coalesce controls
@@ -86,8 +86,8 @@ ethtool may dump registers to standard out in various formats:
 ethtool -d <devname>
 ```
 
-<img src="images/ethtool/ethtool-d-part1.png" width="353" height="456" />
-<img src="images/ethtool/ethtool-d-part2.png" width="351" height="456" />
+<img src="../images/ethtool/ethtool-d-part1.png" width="353" height="456" />
+<img src="../images/ethtool/ethtool-d-part2.png" width="351" height="456" />
 
  - **Editing & Read-back Raw format**
 
@@ -113,5 +113,5 @@ Note: You will realize that editing hex format content is not working
 correctly as the read-back mode implemented in ethtool project expects
 a raw format output as shown below:-
 
-<img src="images/ethtool/ethtool-dumpregs-src.png" width="669" height="426" />
+<img src="../images/ethtool/ethtool-dumpregs-src.png" width="669" height="426" />
 

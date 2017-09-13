@@ -100,12 +100,12 @@ Start with [GitHub SSH Setup](https://help.github.com/articles/connecting-to-git
 
 ## Setting-up /etc/network/interfaces
 
-Please see examples at [docs/iper3](docs/iperf3.md#11b-setting-ip-address-for-the-2-adapters-at-linux-vm).
+Please see examples at [docs/network/iper3](docs/network/iperf3.md#11b-setting-ip-address-for-the-2-adapters-at-linux-vm).
 
 ## Using ethtool
 
 For more details about using ethtool for getting and setting configuration for network device,
-please see [docs/ethtool](docs/ethtool.md).
+please see [docs/network/ethtool](docs/network/ethtool.md).
 
 # GitHub Setup
 
@@ -141,17 +141,17 @@ GitHub account names there.
 ### iperf3
 
 For more details about using iperf3 for collecting network throughput and latency,
-please see [docs/iper3](docs/iperf3.md).
+please see [docs/network/iper3](docs/network/iperf3.md).
 
 ### wireshark
 
 This section contains information about wireshark setup and its usage, please see
-[docs/wireshark](docs/wireshark.md)
+[docs/network/wireshark](docs/network/wireshark.md)
 
 ### Lua Scripting with tshark
 
 For more information how Lua script can be used as dissectors for Wireshark network
-packet analyzer console (tshark), please see [docs/tshark-lua](docs/tshark-lua.md)
+packet analyzer console (tshark), please see [docs/network/tshark-lua](docs/network/tshark-lua.md)
 
 ## For Graphics & Media
 
