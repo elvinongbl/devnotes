@@ -42,6 +42,12 @@ Below are the results that I have run on UP2 board - N3350
 ## Non-realtime OS for 100,000,000 iterations
 <img src="../images/realtime/plot-100000000.png" width="400" height="200" />
 
+## PREEMPT_RT OS for 1,000,000 iterations
+<img src="../images/realtime/plot-1000000-rt.png" width="400" height="200" />
+
+## PREEMPT_RT OS for 100,000,000 iterations
+<img src="../images/realtime/plot-100000000-rt.png" width="400" height="200" />
+
 # Good URLs
  - https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cyclictest
  - https://www.osadl.org/Create-a-latency-plot-from-cyclictest-hi.bash-script-for-latency-plot.0.html?&no_cache=1&sword_list[0]=script
