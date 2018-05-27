@@ -13,6 +13,7 @@ I am dealing with Linux-based OS and system.
 [Git and GitHub Setup](#git-and-github-setup)
 - [Setting-up SSH Access](#setting-up-ssh-access)
 - [Setting-up Github account](#setting-up-github-account)
+- [Setting-up gmail for git send-email](#setting-up-gmail-for-git-send-email)
 
 [Performance Gathering](#performance-gathering)
 - [For Processor](#for-processor)
@@ -71,6 +72,10 @@ Please see [docs/git-setup/ssh-key](docs/git-setup/ssh-key.md)
 ## Setting-up Github Account
 
 Please see [docs/git-setup/github-setup](docs/git-setup/github-setup.md)
+
+## Setting-up gmail for git send-email
+
+Please see [docs/git-setup/gitconfig](docs/git-setup/gitconfig.md)
 
 # Performance Gathering
 ## For Processor
