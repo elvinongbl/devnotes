@@ -11,9 +11,9 @@ I am dealing with Linux-based OS and system.
 - [Using ethtool](#using-ethtool)
 
 [Git and GitHub Setup](#git-and-github-setup)
+- [General Overview and Setup for git](#general-overview-and-setup-for-git)
 - [Setting-up SSH Access](#setting-up-ssh-access)
 - [Setting-up Github account](#setting-up-github-account)
-- [Setting-up gmail for git send-email](#setting-up-gmail-for-git-send-email)
 
 [Performance Gathering](#performance-gathering)
 - [For Processor](#for-processor)
@@ -65,6 +65,20 @@ please see [docs/network/ethtool](docs/network/ethtool.md).
 
 # Git and GitHub Setup
 
+## General Overview and Setup for git
+
+git is the de-facto source code management tool widely used in open source projects.
+Before you continue to read more about it, you should first setup at your home directory
+a default git configuration (~/.gitconfig).
+
+An example of my ~/.gitconfig is shown at [docs/git-setup/gitconfig](docs/git-setup/gitconfig.md).
+For time being, you can ignore the "smtpPass = <app password>" in \[sendemail\] as we will see how
+to setup your google 2-way password to use 'application password' authentication instead of your
+google account user password.
+
+In addition, if you are interested to setup your prompt to automatically print 'git branch' info,
+please read [docs/git-setup/git-sh-setup](docs/git-setup/git-sh-setup.md).
+
 ## Setting-up SSH Access
 
 Please see [docs/git-setup/ssh-key](docs/git-setup/ssh-key.md)
@@ -72,10 +86,6 @@ Please see [docs/git-setup/ssh-key](docs/git-setup/ssh-key.md)
 ## Setting-up Github Account
 
 Please see [docs/git-setup/github-setup](docs/git-setup/github-setup.md)
-
-## Setting-up gmail for git send-email
-
-Please see [docs/git-setup/gitconfig](docs/git-setup/gitconfig.md)
 
 # Performance Gathering
 ## For Processor
