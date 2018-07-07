@@ -1,11 +1,12 @@
 # A) Overview
 
-  - [Installation](#installation)
-  - [Build From Source](#build-from-source)
+  - [Installation](#1a-installation)
+  - [Build From Source](#1b-build-from-source)
   - [Show Basics Network Device Information](#2-show-basics-network-device-information)
   - [Pause Frame](#3-pause-frame)
   - [Interrupt Coalesce](#4-interrupt-coalesce)
   - [Dump registers](#5-dump-registers)
+  - [Time Stamping](#6-time-stamping)
 
 # 1a) Installation
 
@@ -138,3 +139,18 @@ a raw format output as shown below:-
 
 <img src="../images/ethtool/ethtool-dumpregs-src.png" width="669" height="426" />
 
+# 6) Time Stamping
+
+Time stamping is important to improve the accuracy of time synchronization between
+two end stations by using technique described in IEEE1588 Precision Time Protocol
+(PTP). Time stamping can be done by software (in kernel) or hardware
+(MAC controller).
+
+To show the time-stamping capability of an Ethernet controller:-
+```
+ethtool -T <network interface>
+```
+
+<img src="../images/ethtool/ethtool-time-stamping.png" width="558" height="433" />
+
+Goto [main](https://github.com/elvinongbl/devnotes)
