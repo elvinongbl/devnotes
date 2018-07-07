@@ -1,12 +1,13 @@
 # A) Overview
 
   - [Installation](#installation)
+  - [Build From Source](#build-from-source)
   - [Show Basics Network Device Information](#2-show-basics-network-device-information)
   - [Pause Frame](#3-pause-frame)
   - [Interrupt Coalesce](#4-interrupt-coalesce)
   - [Dump registers](#5-dump-registers)
 
-# 1) Installation
+# 1a) Installation
 
 For Ubuntu system, simply run below command:
 
@@ -18,6 +19,28 @@ For Yocto Project-built Linux OS, to pre-install ethtool on target OS, please
 make sure:-
 
  - conf/local.conf    : IMAGE_INSTALL += "ethtool"
+
+# 1b) Build From Source
+
+Ethtool is developed in parallel with the development of Linux kernel mainline.
+So, check that your Linux kernel version by using 'name -a' and make sure that
+you check out the right tag that matches your system kernel version. You can
+list the project tag by using 'git tag'.
+
+```
+git clone git://git.kernel.org/pub/scm/network/ethtool/ethtool.git
+# In addition to basic software packages needs to compile Linux
+sudo apt-get install automake
+cd ethtool
+# To list project tags
+git tag
+# To checkout the right tag of your kernel project
+git checkout <tag of your kernel version>
+./autogen.sh
+./configure
+make
+sudo make install
+```
 
 # 2) Show Basics Network Device Information
 
