@@ -1,3 +1,4 @@
+# This is my 1st development note
 # Overview
 This is my quick personal notes that I have gathered all these years when
 I am dealing with Linux-based OS and system.
