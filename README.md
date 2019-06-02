@@ -14,6 +14,7 @@ I am dealing with Linux-based OS and system.
 - [General Overview and Setup for git](#general-overview-and-setup-for-git)
 - [Setting-up SSH Access](#setting-up-ssh-access)
 - [Setting-up Github account](#setting-up-github-account)
+- [Setting-up git-pw](#setting-up-git-pw)
 
 [Performance Gathering](#performance-gathering)
 - [For Processor](#for-processor)
@@ -86,6 +87,12 @@ Please see [docs/git-setup/ssh-key](docs/git-setup/ssh-key.md)
 ## Setting-up Github Account
 
 Please see [docs/git-setup/github-setup](docs/git-setup/github-setup.md)
+
+## Setting-up git-pw
+
+A useful script between patches in patchwork and git:
+Please see [docs/git-setup/git-pw](docs/git-setup/git-pw.md)
+
 
 # Performance Gathering
 ## For Processor
